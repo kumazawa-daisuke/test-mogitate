@@ -15,8 +15,8 @@ class ProductsController extends Controller
     
     public function detail(Request $request)
     {
-        $item = Product::find($request->id);
-        return view('detail', ['item' => $products]);
+        $product = Product::find($request->id);
+        return view('detail', ['form' => $product]);
     }
 
     public function register()
@@ -28,6 +28,6 @@ class ProductsController extends Controller
     {
         $item = $request->all();
         Product::create($item);
-        return redirect('/products');
+        return redirect('products');
     }
 }

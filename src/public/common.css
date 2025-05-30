@@ -1,0 +1,16 @@
+.header {
+    background: #fff;
+}
+
+.header__inner {
+    margin: 0 auto;
+    color: #eec92f;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+main {
+    height: auto;
+    background-color: #f8f8f8;
+    padding: 15px;
+}

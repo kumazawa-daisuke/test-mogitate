@@ -14,8 +14,10 @@ use App\Http\Controllers\ProductsController;
 |
 */
 
-Route::get('/products', [ProductsController::class,'products']);
-Route::get('/products/register',[ProductsController::class,'register'])->name('products.register');
-Route::post('/products/register',[ProductsController::class,'create']);
-Route::get('/products/{productld?}',[ProductsController::class,'detail']);
+Route::prefix('products')->group(function(){
+    Route::get('', [ProductsController::class,'products']);
+    Route::get('register',[ProductsController::class,'register']);
+    Route::get('{productId}',[ProductsController::class,'detail']);
+    Route::post('{productId}/update',[ProductsController::class,'create']);
+});
 

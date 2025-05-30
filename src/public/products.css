@@ -1,25 +1,3 @@
-.header {
-    background: #fff;
-}
-
-.header__inner {
-    margin: 0 auto;
-    color: #eec92f;
-    font-family: Georgia;
-    font-style: italic;
-}
-
-* {
-    box-sizing: border-box;
-    border: 1px solid red;
-}
-
-.main {
-    height: auto;
-    background-color: #f8f8f8;
-    padding: 15px;
-}
-
 .content__head {
     display: flex;
     justify-content: space-between;
@@ -109,4 +87,12 @@
 
 .price {
     margin: 0 10px 5px 0;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
 }
